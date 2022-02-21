@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="index.js"></script>
+    <title>Agenda</title>
+</head>
+<body onload="cargarContactos()">
+
+    <div class="granFather">
+        <div id="formulario">
+            <label for="inpuText">Nombre</label>
+            <input type="text" name="" id="inputText">
+    
+            <label for="inpuText2">Apellido</label>
+            <input type="text" name="" id="inputText2">
+    
+            <label for="inpuText3">Telefono</label>
+            <input type="text" name="" id="inputText3">
+            
+            <input type="button"  value="Enviar" onclick="enviarContactos()" id="botonEnviar">
+        </div>
+    
+        <table class="myTable">
+            <tr class="filaTable">
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Phone number</th>
+            </tr>
+    
+            <tbody id="my_table">
+    
+            </tbody>
+        </table>
+    </div>
+
+    <script src="methodPOST.js"></script>
+</body>
+</html>
